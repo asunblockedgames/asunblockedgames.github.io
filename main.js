@@ -1,9 +1,4 @@
-function searchGames(event) {
-
-    if (event.key !== 'Enter') {
-      return;
-    }
-    
+function searchGames() {
     var input = document.getElementById('search-bar');
     var filter = input.value.toLowerCase();
     var gameGrid = document.getElementById('game-grid');

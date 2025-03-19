@@ -45,7 +45,7 @@ body {
 
 
     button {
-    background-color: #007BFF; 
+    background-color: #ff0000; 
     color: white; 
     border: none;
     padding: 10px 20px;
@@ -56,7 +56,7 @@ body {
 }
 
 button:hover {
-    background-color: #0056b3; 
+    background-color: #3b0000; 
 }
 
 .game-grid {
@@ -160,11 +160,9 @@ button:hover {
     border: 1px solid
   }
 
-  .AS-Studios-Comics {
+  .Update-text{
     text-align: center;
-    font-size: 15px;
+    font-size: 24px;
     color: white;
-    margin-bottom: 20px; 
-    line-height: 1.5;
-    width: 85%;
+    margin-bottom: 20px;
   }
