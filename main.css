@@ -166,3 +166,10 @@ button:hover {
     color: white;
     margin-bottom: 20px;
   }
+
+  .story-text{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+  }
