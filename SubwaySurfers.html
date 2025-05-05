@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-  <link rel="icon" type="image/x-icon" href="/MainFavicon.ico">
-   <link rel="stylesheet" href="main.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subway Surfers Unblocked</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin-top: 100px;
+    }
+    button {
+      padding: 15px 35px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+    button:hover {
+      background-color: #0b7dda;
+    }
+  </style>
 </head>
-        
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Subway Surfers Unblocked</title>
-                <link rel="stylesheet" href="main.css"> 
-            
-            <body>
-                    <h1 class="custom-text">Subway Surfers</h1>
+<body>
+  <h1>Subway Surfers Unblocked</h1>
+  <p>Click the button below to launch the game in fullscreen mode.</p>
+  <button onclick="launchFullscreen()">Fullscreen</button>
 
+  <p><a href="games.html">Back to Games</a></p>
+  <p><a href="index.html">Back to Home</a></p>
 
-                    <iframe src="" 
-            width="1200" 
-            height="600" 
-            frameborder="0" 
-            allowfullscreen>
-    </iframe>
-    <html>
- 
-  <head></head>
-  </head>
- 
-  <body>
-    <button>Fullscreen</button>
-    <script>
-      var urlObj = new window.URL(window.location.href);
-      var url = "";
-      if (url) {
-        var win;
- 
-        document.querySelector('button').onclick = function() {
-          if (win && !win.closed) {
-            win.focus();
-          } else {
-            win = window.open();
-            win.document.body.style.margin = '0';
-            win.document.body.style.height = '100vh';
-            var iframe = win.document.createElement('iframe');
-            iframe.style.border = 'none';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.margin = '0';
-            iframe.src = https://subway-surfers.gitlab.io/
-            win.document.body.appendChild(iframe);
-          }
-          document.querySelector('button').style.bacground = 'grey';
-          
-        };
+  <script>
+    function launchFullscreen() {
+      const gameURL = "https://subway-surfers.gitlab.io/";
+      const newTab = window.open("about:blank", "_blank");
+      if (newTab) {
+        newTab.document.write(`
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>Subway Surfers</title>
+            <style>
+              body, html {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                height: 100%;
+                background-color: black;
+              }
+              iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+              }
+            </style>
+          </head>
+          <body>
+            <iframe src="${gameURL}" allowfullscreen></iframe>
+          </body>
+          </html>
+        `);
+        newTab.document.close();
+      } else {
+        alert("Popup blocked! Please allow popups for this site.");
       }
- 
-    </script>
-  </body>
- 
-</html>
-    <p><a href="games.html">Back to Games</a></p>
-    <p><a href="index.html">Back to Home</a></p>
+    }
+  </script>
 </body>
 </html>
+
