@@ -1,0 +1,9 @@
+<a href="kick-the-buddy.html">
+  <img 
+    src="https://www.jopi.com/media/cache/thumb_400/uploads/game/2023/03/kick-the-buddy.jpg" 
+    alt="Kick the Buddy"
+    style="width: 180px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: transform 0.2s;"
+    onmouseover="this.style.transform='scale(1.05)'" 
+    onmouseout="this.style.transform='scale(1)'"
+  >
+</a>
