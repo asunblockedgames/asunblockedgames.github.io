@@ -173,3 +173,7 @@ button:hover {
     color: white;
     margin-bottom: 20px;
   }
+
+  .hidden {
+    display: none;
+}
