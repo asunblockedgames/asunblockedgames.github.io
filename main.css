@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(135deg, #242424, #000000);
+    background:#000000;
     padding: 0;
     display: flex; 
     flex-direction: column;
@@ -38,7 +38,7 @@ body {
 
 .founder-text {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     margin-bottom: 20px;
 }
@@ -114,7 +114,7 @@ button:hover {
 
   .worker1-text {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     margin-bottom: 20px;
   }
