@@ -9,7 +9,6 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
-
 .container {
     width: 100%;
     margin: 0 auto;
@@ -18,15 +17,12 @@ body {
     align-items: center; 
     color: white
 }
-
 #main-heading {
     text-align: center;
     font-size: 32px;
     color: white;
     margin-bottom: 20px; 
 }
-
-
 .about-text {
     text-align: center;
     font-size: 18px;
@@ -34,16 +30,12 @@ body {
     margin-bottom: 20px; 
     line-height: 1.5; 
 }
-
-
 .founder-text {
     text-align: center;
     font-size: 20px;
     color: white;
     margin-bottom: 20px;
 }
-
-
     button {
     background-color: #ff0000; 
     color: white; 
@@ -54,11 +46,9 @@ body {
     cursor: pointer;
     margin: 10px; 
 }
-
 button:hover {
     background-color: #3b0000; 
 }
-
 .game-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -78,7 +68,6 @@ button:hover {
   .game-thumbnail:hover {
     transform: scale(1.05);
   }
-
   a {
     color: red; 
   }
@@ -86,7 +75,6 @@ button:hover {
   a:hover {
     color: red; 
   }
-
   .paragraph-text {
     text-align: center;
     font-size: 15px;
@@ -95,14 +83,12 @@ button:hover {
     line-height: 1.5;
     width: 85%;
   }
-
 .CodingClub-text {
     text-align: center;
     font-size: 24px;
     color: white;
     margin-bottom: 20px;
   }
-
 .AboutCodingClub-text {
     text-align: center;
     font-size: 15px;
@@ -111,45 +97,37 @@ button:hover {
     line-height: 1.5;
     width: 85%;
   }
-
   .worker1-text {
     text-align: center;
     font-size: 20px;
     color: white;
     margin-bottom: 20px;
   }
-
   .worker2-text {
     text-align: center;
     font-size: 16px;
     color: white;
     margin-bottom: 20px;
   }
-
-
   .creator-text {
     text-align: center;
     font-size: 24px;
     color: white;
     margin-bottom: 20px;
   }
-
   h1.custom-text{
     text-align: center;
     font-size: 24px;
     color: white;
     margin-bottom: 20px; 
   }
-
   footer {
     color: white;
   }
-
   .spacebar-clicker {
     height: 105px;
     width: 100%;
   }
-
   #searchbar {
     width: 80%;
     padding: 10px;
@@ -159,25 +137,21 @@ button:hover {
     font-size: 16px;
     border: 1px solid
   }
-
   .Update-text{
     text-align: center;
     font-size: 24px;
     color: white;
     margin-bottom: 20px;
   }
-
   .story-text{
     text-align: center;
     font-size: 16px;
     color: white;
     margin-bottom: 20px;
   }
-
   .hidden {
     display: none;
 }
-
 .banner {
   background-color: grey; 
   color: white; 
@@ -200,4 +174,9 @@ button:hover {
 .Bottom-text {
     text-align: center;
     color: white;
+}
+hr {
+    width: 80%;
+    border: 1px solid #444;
+    margin: 20px auto;
 }
