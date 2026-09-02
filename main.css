@@ -191,3 +191,13 @@ button:hover {
   width: 100%; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
+.YT-Channel-text {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+.Bottom-text {
+    text-align: center;
+    color: white;
+}
