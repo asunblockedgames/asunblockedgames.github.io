@@ -171,6 +171,12 @@ button:hover {
     color: white;
     margin-bottom: 20px;
 }
+.Itch-io-text {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
 .Bottom-text {
     text-align: center;
     color: white;
