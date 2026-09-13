@@ -1,66 +1,73 @@
 /* body {
-    background:#000000;
+    background: #000000;
     padding: 0;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    align-items: center; 
-    height: 100vh; 
+    align-items: center;
+    height: 100vh;
     font-family: 'Lato', sans-serif;
     max-width: 100%;
     margin: 0 auto;
 } */
 
 body {
-    background:#000000;
+    background: #000000;
     padding: 0;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    align-items: center; 
-    min-height: 100vh;  /* was: height: 100vh; */
+    align-items: center;
+    min-height: 100vh;
     font-family: 'Lato', sans-serif;
     max-width: 100%;
     margin: 0 auto;
 }
+
 .container {
     width: 100%;
     margin: 0 auto;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    align-items: center; 
-    color: white
+    align-items: center;
+    color: white;
 }
+
 #main-heading {
     text-align: center;
     font-size: 32px;
     color: white;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
+
 .about-text {
     text-align: center;
     font-size: 18px;
     color: white;
-    margin-bottom: 20px; 
-    line-height: 1.5; 
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
+
 .founder-text {
     text-align: center;
     font-size: 20px;
     color: white;
     margin-bottom: 20px;
 }
-    button {
-    background-color: #ff0000; 
-    color: white; 
+
+button {
+    background-color: #ff0000;
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 5px; 
+    border-radius: 5px;
     cursor: pointer;
-    margin: 10px; 
+    margin: 10px;
 }
+
 button:hover {
-    background-color: #3b0000; 
+    background-color: #3b0000;
 }
+
 .game-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -68,131 +75,150 @@ button:hover {
     padding: 20px;
     width: 90%;
     margin: 0 auto;
-  }
-  
-  .game-thumbnail {
+}
+
+.game-thumbnail {
     width: 100%;
     height: auto;
     border-radius: 8px;
     transition: transform 0.2s;
-  }
-  
-  .game-thumbnail:hover {
+}
+
+.game-thumbnail:hover {
     transform: scale(1.05);
-  }
-  a {
-    color: red; 
-  }
-  
-  a:hover {
-    color: red; 
-  }
-  .paragraph-text {
+}
+
+a {
+    color: red;
+}
+
+a:hover {
+    color: red;
+}
+
+.paragraph-text {
     text-align: center;
     font-size: 15px;
     color: white;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     line-height: 1.5;
     width: 85%;
-  }
+}
+
 .CodingClub-text {
     text-align: center;
     font-size: 24px;
     color: white;
     margin-bottom: 20px;
-  }
+}
+
 .AboutCodingClub-text {
     text-align: center;
     font-size: 15px;
     color: white;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     line-height: 1.5;
     width: 85%;
-  }
-  .worker1-text {
+}
+
+.worker1-text {
     text-align: center;
     font-size: 20px;
     color: white;
     margin-bottom: 20px;
-  }
-  .worker2-text {
+}
+
+.worker2-text {
     text-align: center;
     font-size: 20px;
     color: white;
     margin-bottom: 20px;
-  }
-  .creator-text {
+}
+
+.creator-text {
     text-align: center;
     font-size: 24px;
     color: white;
     margin-bottom: 20px;
-  }
-  h1.custom-text{
+}
+
+h1.custom-text {
     text-align: center;
     font-size: 24px;
     color: white;
-    margin-bottom: 20px; 
-  }
-  footer {
+    margin-bottom: 20px;
+}
+
+footer {
     color: white;
-  }
-  .spacebar-clicker {
+}
+
+.spacebar-clicker {
     height: 105px;
     width: 100%;
-  }
-  #searchbar {
+}
+
+#searchbar {
     width: 80%;
     padding: 10px;
     margin: 20px auto;
     display: block;
     border-radius: 5px;
     font-size: 16px;
-    border: 1px solid
-  }
-  .Update-text{
+    border: 1px solid;
+}
+
+.Update-text {
     text-align: center;
     font-size: 24px;
     color: white;
     margin-bottom: 20px;
-  }
-  .story-text{
+}
+
+.story-text {
     text-align: center;
     font-size: 16px;
     color: white;
     margin-bottom: 20px;
-  }
-  .hidden {
+}
+
+.hidden {
     display: none;
 }
+
 .banner {
-  background-color: grey; 
-  color: white; 
-  text-align: center; 
-  padding: 10px 0; 
-  font-size: 18px; 
-  font-weight: bold; 
-  position: sticky; 
-  top: 0; 
-  z-index: 1000; 
-  width: 100%; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .YT-Channel-text {
     text-align: center;
     font-size: 18px;
     color: white;
     margin-bottom: 20px;
 }
+
 .Itch-io-text {
     text-align: center;
     font-size: 18px;
     color: white;
     margin-bottom: 20px;
 }
+
 .Bottom-text {
     text-align: center;
     color: white;
 }
+
 hr {
     width: 80%;
     border: 1px solid #444;
