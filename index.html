@@ -16,6 +16,20 @@
 AS Unblocked Games
 </h1>
 </div>
+<div id="event-container">
+    <button id="confetti-button">SECOND ANNIVERSARY TOMMOROW!!!!</button>
+    <script>
+    const confettiButton = document.getElementById('confetti-button');
+    function launchConfetti() {
+    confetti({
+    particleCount: 150,
+    spread: 100,
+    origin: { y: 0.6 }
+    });
+    }
+    setInterval(launchConfetti, 3000);
+    </script>
+    </div>
 </header>
 <h2 class="about-text">
 About Us:
