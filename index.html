@@ -21,6 +21,7 @@ AS Unblocked Games
     <script>
     const confettiButton = document.getElementById('confetti-button');
     let isLaunching = false;
+    const myConfetti = confetti.create(null, { resize: true, useWorker: false });
 
     function launchConfetti() {
         if (isLaunching) return; // ignore extra clicks while it's going
@@ -28,7 +29,7 @@ AS Unblocked Games
 
         for (let i = 0; i < 3; i++) {
             setTimeout(() => {
-                confetti({
+                myConfetti({
                     particleCount: 150,
                     spread: 100,
                     origin: { y: 0.6 },
