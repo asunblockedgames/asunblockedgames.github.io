@@ -17,19 +17,31 @@ AS Unblocked Games
 </h1>
 </div>
 <div id="event-container">
-    <button id="confetti-button">SECOND ANNIVERSARY TOMMOROW!!!!</button>
+    <button id="confetti-button">SECOND ANNIVERSARY TOMORROW!!!!</button>
     <script>
     const confettiButton = document.getElementById('confetti-button');
+    let isLaunching = false;
+
     function launchConfetti() {
-    confetti({
-    particleCount: 150,
-    spread: 100,
-    origin: { y: 0.6 }
-    });
+        if (isLaunching) return; // ignore extra clicks while it's going
+        isLaunching = true;
+
+        for (let i = 0; i < 3; i++) {
+            setTimeout(() => {
+                confetti({
+                    particleCount: 150,
+                    spread: 100,
+                    origin: { y: 0.6 },
+                    disableForReducedMotion: true
+                });
+                if (i === 2) isLaunching = false; // done, allow the next click
+            }, i * 700);
+        }
     }
-    setInterval(launchConfetti, 3000);
+
+    confettiButton.addEventListener('click', launchConfetti);
     </script>
-    </div>
+</div>
 </header>
 <h2 class="about-text">
 About Us:
