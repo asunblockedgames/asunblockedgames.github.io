@@ -242,3 +242,9 @@ hr {
 .mascot img:hover {
     transform: scale(1.1); 
 }
+
+
+
+button, .button { display: inline-block; text-decoration: none; } /* merge into your existing button rule */
+.link-list { list-style: none; padding: 0; }
+/* rename .worker1-text / .worker2-text selectors to .worker-text */
