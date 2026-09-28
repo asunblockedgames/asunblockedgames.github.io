@@ -224,3 +224,21 @@ hr {
     border: 1px solid #444;
     margin: 20px auto;
 }
+
+.games-and-mascot {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 20px; 
+}
+
+
+.mascot img {
+    width: 300px; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+}
+
+.mascot img:hover {
+    transform: scale(1.1); 
+}
