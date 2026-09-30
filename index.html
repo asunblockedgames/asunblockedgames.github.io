@@ -8,28 +8,6 @@
 <title>AS Unblocked Games</title>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <style>
-    /* Cuphead & Mugman pop-out effect */
-    .pop-char {
-        position: fixed;
-        width: 220px;
-        height: auto;
-        background: none;          /* no background behind the characters */
-        pointer-events: none;
-        z-index: 10000;
-        transform-origin: bottom center;
-        animation: popOut 0.6s cubic-bezier(.34, 1.56, .64, 1) forwards;
-    }
-    .pop-char.leaving {
-        animation: popAway 0.4s ease-in forwards;
-    }
-    @keyframes popOut {
-        0%   { transform: translateY(90px) scale(0) rotate(0deg); opacity: 0; }
-        60%  { transform: translateY(-30px) scale(1.15) rotate(-6deg); opacity: 1; }
-        100% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
-    }
-    @keyframes popAway {
-        to { transform: translateY(60px) scale(0); opacity: 0; }
-    }
 </style>
 </head>
 <body>
@@ -39,75 +17,6 @@
 <h1 id="main-heading">
 AS Unblocked Games
 </h1>
-</div>
-<div id="event-container">
-    <button id="confetti-button">Hello Neighbor's Video Game Anniversary Today(Yesterday Actually)!</button>
-    <script>
-    const confettiButton = document.getElementById('confetti-button');
-    let isLaunching = false;
-
-    const CHAR_WIDTH = 220; // keep in sync with .pop-char width in the CSS
-
-    function makeChar(src, alt, x, y) {
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = alt;
-        img.className = 'pop-char';
-        img.style.left = (x - CHAR_WIDTH / 2) + 'px';
-        img.style.top = y + 'px';
-        document.body.appendChild(img);
-        return img;
-    }
-
-    function burstAt(px, py) {
-        confetti({
-            particleCount: 80,
-            spread: 360,
-            startVelocity: 30,
-            gravity: 0.9,
-            ticks: 200,
-            zIndex: 9999,
-            origin: {
-                x: px / window.innerWidth,
-                y: py / window.innerHeight
-            },
-            disableForReducedMotion: true
-        });
-    }
-
-    function burstAround(el) {
-        const r = el.getBoundingClientRect();
-        const cy = r.top + r.height / 2;
-        burstAt(r.left, cy);                  // left of the duo
-        burstAt(r.right, cy);                 // right of the duo
-        burstAt(r.left + r.width / 2, r.top); // above the duo
-    }
-
-    function launchConfetti() {
-        if (isLaunching) return; // ignore extra clicks while it's going
-        isLaunching = true;
-
-        const b = confettiButton.getBoundingClientRect();
-        const cx = b.left + b.width / 2;
-        const y = b.top - 150;               // pops up from the top of the button
-
-        const duo = makeChar('capsule_616x353.jpg', 'Hello Neighbor', cx, y);
-
-        // 3 confetti bursts around them
-        for (let i = 0; i < 3; i++) {
-            setTimeout(() => burstAround(duo), 500 + i * 700);
-        }
-
-        // they pop back down, then clean up
-        setTimeout(() => duo.classList.add('leaving'), 2400);
-        setTimeout(() => {
-            duo.remove();
-            isLaunching = false;
-        }, 2900);
-    }
-
-    confettiButton.addEventListener('click', launchConfetti);
-    </script>
 </div>
 </header>
 <h2 class="about-text">
@@ -206,6 +115,29 @@ Itch Link: <a href="https://cupsponge-1234.itch.io/" target="_blank" rel="noopen
     confettiButton.addEventListener('click', launchConfetti);
     </script>
 </div>
+ /* Cuphead & Mugman pop-out effect */
+    .pop-char {
+        position: fixed;
+        width: 220px;
+        height: auto;
+        background: none;          /* no background behind the characters */
+        pointer-events: none;
+        z-index: 10000;
+        transform-origin: bottom center;
+        animation: popOut 0.6s cubic-bezier(.34, 1.56, .64, 1) forwards;
+    }
+    .pop-char.leaving {
+        animation: popAway 0.4s ease-in forwards;
+    }
+    @keyframes popOut {
+        0%   { transform: translateY(90px) scale(0) rotate(0deg); opacity: 0; }
+        60%  { transform: translateY(-30px) scale(1.15) rotate(-6deg); opacity: 1; }
+        100% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+    }
+    @keyframes popAway {
+        to { transform: translateY(60px) scale(0); opacity: 0; }
+    }
+
 <div id="event-container">
     <button id="confetti-button">Cuphead's Video Game Anniversary Today!</button>
     <script>
