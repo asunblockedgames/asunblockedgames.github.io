@@ -201,8 +201,8 @@
       setProgress(0.1);
 
       const scaffolding = new Scaffolding.Scaffolding();
-      scaffolding.width = 1920;
-      scaffolding.height = 1080;
+      scaffolding.width = 480;
+      scaffolding.height = 360;
       scaffolding.resizeMode = "preserve-ratio";
       scaffolding.editableLists = false;
       scaffolding.usePackagedRuntime = true;
@@ -350,6 +350,12 @@
       for (const extension of []) {
         vm.extensionManager.loadExtensionURL(extension);
       }
+
+      vm.runtime.on('PROJECT_RUN_STOP', () => {
+        if (!vm.isPaused || !vm.isPaused()) {
+          window.close();
+        }
+      });
 
     } catch (e) {
       handleError(e);
