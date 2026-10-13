@@ -19,6 +19,38 @@ AS Unblocked Games
 </h1>
 </div>
 </header>
+
+<div id="event-container">
+    <button id="confetti-button">TODAY IS CUPSPONGE_1234's BIRTHDAY!!!
+    </button>
+    <script>
+        const confettiButton = document.getElementById('confetti-button');
+        let isLaunching = false;
+        const myConfetti = confetti.create(null, { resize: true, useWorker: false });
+
+        function launchConfetti() {
+            if (isLaunching) return; // ignore extra clicks while it's going
+            isLaunching = true;
+
+            for (let i = 0; i < 3; i++) {
+                setTimeout(() => {
+                    myConfetti({
+                        particleCount: 150,
+                        spread: 100,
+                        origin: { y: 0.6 },
+                        disableForReducedMotion: true
+                    });
+                    if (i === 2) isLaunching = false; // done, allow the next click
+                }, i * 700);
+            }
+        }
+
+        confettiButton.addEventListener('click', launchConfetti);
+    </script>
+</div>
+<p class="paragraph-text">
+    (Founder of AS Unblocked Games)
+</p>
 <h2 class="about-text">
 About Us:
 </h2>
@@ -94,6 +126,8 @@ OG: <a href="https://sites.google.com/view/saman-unblocked-games/home?pli=1&auth
 <footer>
 <p>AS Studios</p>
 </footer>
+
+
 
 <!--
 <div id="event-container">
