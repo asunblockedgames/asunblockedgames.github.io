@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granny Unblocked</title>
+    <link rel="icon" type="image/x-icon" href="/MainFavicon.ico">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1 class="custom-text">Granny</h1>
+
+    <iframe
+      src="https://genizymath.github.io/games/granny/"
+      width="1200"
+      height="600"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+
+    <html>
+      <body>
+        <button>Fullscreen</button>
+        <script>
+          var urlObj = new window.URL(window.location.href);
+          var url = "https://genizymath.github.io/games/granny/";
+
+          if (url) {
+            var win;
+
+            document.querySelector('button').onclick = function() {
+              if (win && !win.closed) {
+                win.focus();
+              } else {
+                win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+              }
+              document.querySelector('button').style.background = 'grey';
+            };
+          }
+        </script>
+      </body>
+    </html>
+
+    <p><a href="games.html">Back to Games</a></p>
+    <p><a href="index.html">Back to Home</a></p>
+  </body>
+</html>
