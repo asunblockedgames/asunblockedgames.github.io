@@ -20,6 +20,34 @@ AS Unblocked Games
 </div>
 </header>
 
+<div id="event-container">
+    <button id="confetti-button">AS Studios YT HAS HIT 100 SUBS!!!!</button>
+    <script>
+    const confettiButton = document.getElementById('confetti-button');
+    let isLaunching = false;
+    const myConfetti = confetti.create(null, { resize: true, useWorker: false });
+
+    function launchConfetti() {
+        if (isLaunching) return; // ignore extra clicks while it's going
+        isLaunching = true;
+
+        for (let i = 0; i < 3; i++) {
+            setTimeout(() => {
+                myConfetti({
+                    particleCount: 150,
+                    spread: 100,
+                    origin: { y: 0.6 },
+                    disableForReducedMotion: true
+                });
+                if (i === 2) isLaunching = false; // done, allow the next click
+            }, i * 700);
+        }
+    }
+
+    confettiButton.addEventListener('click', launchConfetti);
+    </script>
+</div>
+
 <h2 class="about-text">
 About Us:
 </h2>
