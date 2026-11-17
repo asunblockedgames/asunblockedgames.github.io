@@ -242,6 +242,9 @@ hr {
     cursor: pointer; 
     transition: transform 0.3s ease; 
 }
+ul.custom-text li {
+  font-size: 1.5em;
+}
 
 .mascot img:hover {
     transform: scale(1.1); 
